@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyal | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="transparent-nav">
+    <div class="logo">
+      <img src="mylogo.png" alt="Logo" class="logo-img">
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#toggle-section">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <p class="intro">HEY! I AM</p>
+    <h1 class="hero-name">Priyal Patel</h1>
+    <h2 class="typing"># <span id="typewriter"></span></h2>
+    <div class="scroll-down">↓</div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <img src="myimage.jpeg" alt="Priyal Patel" class="profile-pic" />
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>I'm a DevOps engineer passionate about building efficient cloud infrastructure and automating workflows to enable seamless software delivery.</p>
+      <br><br>
+      <div class="about-info-grid">
+        <div class="info-label">Name:</div>
+        <div class="info-value">Priyal Patel</div>
+      
+      
+        <div class="info-label">Email:</div>
+        <div class="info-value">patelpriyal970@gmail.com</div>
+      
+        <div class="info-label">Phone:</div>
+        <div class="info-value">+1 647-896-7267</div>
+      
+        <div class="info-label">City:</div>
+        <div class="info-value">Toronto, ON, Canada</div>
+      </div>      
+      <a href="Priyal_Cloud.pdf" download class="btn">Get Resume</a>
+    </div>
+  </section>
+
+  <br><br>
+<!-- Education and Skills Section Side by Side -->
+<section class="section" id="edu-skill">
+  <div class="flex-container">
+    <div class="half">
+      <h2>Education</h2>
+      <div class="card education-card">
+        <div class="edu-logo-container">
+          <img src="LambtonCollege_Logo_Vertical_FullColour_RGB.jpg" alt="Lambton Logo" class="edu-logo">
+        </div>
+        <div class="edu-content">
+          <div class="edu-row">
+            <div class="edu-left">
+              <h3 class="edu-title">Lambton college, Toronto</h3>
+              <p class="edu-degree">Post Graduate diploma in DevOps for Cloud Computing</p>
+            </div>
+            <div class="edu-date">2023 – 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="card education-card">
+        <div class="edu-logo-container">
+          <img src="LDRP.jpeg" alt="Northeastern Logo" class="edu-logo">
+        </div>
+        <div class="edu-content">
+          <div class="edu-row">
+            <div class="edu-left">
+              <h3 class="edu-title">LDRP Institute of Technology and Research, India</h3>
+              <p class="edu-degree">Bachelors of computer Engineering</p>
+            </div>
+            <div class="edu-date">2017 - 2021</div>
+          </div>
+        </div>
+      </div> 
+    </div>
+   
+    <div class="half">
+      <h2>Skills</h2>
+      <div class="skill-box-container">
+        <div class="skill-box">Amazon Web Services</div>
+        <div class="skill-box">Google Cloud PLatform</div>
+        <div class="skill-box">AWS </div>
+        <div class="skill-box">Microsoft AZURE</div>
+        <div class="skill-box">Terraform</div>
+        <div class="skill-box">CloudFormation</div>
+        <div class="skill-box">Kubernetes</div>
+        <div class="skill-box">Docker</div>
+        <div class="skill-box">Jenkins</div>
+        <div class="skill-box">Ansible</div>
+        <div class="skill-box">Argo CD</div>
+        <div class="skill-box">CI/CD piplines</div>
+        <div class="skill-box">Python</div>
+        <div class="skill-box">java</div>
+        <div class="skill-box">Typescript</div>
+        <div class="skill-box">Microsoft Dynamics 365</div>
+        <div class="skill-box">Powershell</div>
+        <div class="skill-box">Linux server administration</div>
+        <div class="skill-box">SQL</div>
+        <div class="skill-box">Virtualization</div>
+        <div class="skill-box">Rest API</div>
+        <div class="skill-box">GitOps</div>
+        <div class="skill-box">Infrastructure as Code(IaC)</div>
+      </div>
+    </div>    
+  </div>
+</section>
+
+<br><br>
+
+<!-- Experience Section -->
+<section id="experience" class="section">
+  <h2>Experience</h2>
+  <br><br>
+  <!-- Newgen -->
+  <div class="experience-container">
+  <div class="exp-card">
+    <div class="exp-header" onclick="toggleDetails(this)">
+      <img src="newgen.png" alt="RCIS Logo" class="exp-logo">
+      <div class="exp-info">
+        <h3>NewGen software</h3>
+        <p>Software Engineer</p>
+      </div>
+      <span class="exp-dates">May 2021 – Mar 2023</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="exp-details">
+      <ul>
+        <li>Built and deployed cloud-ready applications using Newgen’s low-code platform.</li>
+        <li>Automated workflows for onboarding, lending, and service operations.</li>
+        <li>Delivered end-to-end solutions in Agile teams, engaging directly with clients.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Tim Hortons -->
+  <div class="exp-card">
+    <div class="exp-header" onclick="toggleDetails(this)">
+      <img src="TimHortons.png" alt="Offsure Logo" class="exp-logo">
+      <div class="exp-info">
+        <h3>Tim Hortons</h3>
+        <p>Customer Service Representative</p>
+      </div>
+      <span class="exp-dates">July 2024 – Sept 2024</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="exp-details">
+      <ul>
+        <li>Processed drive-thru and counter orders with speed and accuracy.</li>
+        <li>Ensured compliance with hygiene and food safety standards.</li>
+        <li>Monitored mobile orders and supported inventory tracking.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Nofrills -->
+  <div class="exp-card">
+    <div class="exp-header" onclick="toggleDetails(this)">
+      <img src="Nofrills.jpeg" alt="Chitkara Logo" class="exp-logo">
+      <div class="exp-info">
+        <h3>NoFrills</h3>
+        <p>Cashier/Customer Service Representative</p>
+      </div>
+      <span class="exp-dates">Feb 2024 – present</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="exp-details">
+      <ul>
+        <li>Provided prompt customer service and resolved issues at checkout.</li>
+        <li>Accurately handled cash/card transactions and supported promotions.</li>
+        <li>Maintained clean, organized workspaces in a fast-paced setting.</li>
+      </ul>
+    </div>
+  </div>
+
+    <div class="exp-card">
+    <div class="exp-header" onclick="toggleDetails(this)">
+      <img src="bayview.jpeg" alt="RCIS Logo" class="exp-logo">
+      <div class="exp-info">
+        <h3>Bayview Menswear</h3>
+        <p>Software Engineer</p>
+      </div>
+      <span class="exp-dates">May 2025 – Present</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="exp-details">
+      <ul>
+        <li>Manage vendor billing and payments using cloud-based tools to ensure accuracy and timely processing.</li>
+        <li>Streamline invoice workflows through automation and data validation using Excel and scripting.</li>
+        <li>Monitor and troubleshoot billing systems to ensure smooth operations and resolve discrepancies.</li>
+        <li>Maintain organized digital records and support process optimization aligned with DevOps practices.</li>
+      </ul>
+    </div>
+  </div>
+
+<!-- Projects & Certificates Toggle -->
+<section class="section" id="toggle-section">
+    <div class="large-tab-buttons">
+      <button class="tab-btn active" onclick="showContent('projects')">Projects</button>
+      <button class="tab-btn" onclick="showContent('certificates')">Certifications</button>
+    </div>
+    <br><br> 
+    <div id="projects" class="tab-content active">
+      <h2 class="section-heading">Check out my latest work</h2>
+      <p class="section-subheading">I've worked on a variety of projects, from dashboards to machine learning. Here are a few highlights.</p>
+      
+      <div class="card-grid">
+        <div class="project-card">
+          <img src="project architechture.png" alt="End-to-End Cloud automation with IaC & Kubernetes">
+          <div class="card-body">
+            <h3>End-to-End Cloud automation with IaC & Kubernetes	</h3>
+            <p>Developed an automated CI/CD pipeline using GitHub Actions, Terraform, and Helm to deploy infrastructure and applications on AWS (VPC, EKS, ECR), implementing Kubernetes orchestration and SonarCloud for code quality enforcement</p>
+            <div class="tags">
+              <span>Github Actions</span><span>Helm</span><span>Terraform</span><span>AWS</span><span>Kubernetes</span><span>VPC,EKS,ECR</span>
+            </div>
+          </div>
+        </div>
+  
+      <div class="project-card">
+          <img src="nginx.png" alt="Secure Node.js dashboard service">
+          <div class="card-body">
+            <h3>Secure Node.js dashboard service</h3>
+            <p>Built a Node.js login dashboard service with automated GitHub Actions CI/CD pipelines, utilizing Docker for containerization and Trivy for security scanning.</p>
+            <div class="tags">
+              <span>Docker</span><span>Trivy</span><span>CI/CD</span><span>Github Actions</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="project-card">
+          <img src="wordpress.png" alt=" GitOps-driven WordPress application ">
+          <div class="card-body">
+            <h3>  GitOps-driven WordPress application </h3>
+            <p>Implemented GitOps-based WordPress deployment on Kubernetes by automating manifest generation (nginx, ingress, WordPress, MySQL) and storing them in GitHub. Configured Argo CD for continuous cluster synchronization with GitHub, enabling self-healing deployments and infrastructure consistency.</p>
+            <div class="tags">
+              <span>GitOps</span><span>Kubernetes</span><span>ArgoCD</span><span>Nginx</span>
+            </div>
+          </div>
+        </div>
+
+      <!--   <div class="project-card">
+          <img src="Scribe.png" alt="Angular-Firebase Deployment Architecture on AWS">
+          <div class="card-body">
+            <h3> Angular-Firebase Deployment Architecture on AWS </h3>
+            <p> This showcases an Angular application integrated with Firebase services for authentication, Firestore database, and hosting. Development occurs in AWS Account A, where the app is built and tested. Once ready, the application is deployed to Firebase Hosting in AWS Account B (Production), enabling a clean and secure separation between development and production environments.</p>
+            <div class="tags">
+              <span>Angular</span><span>Firebase Authentication</span><span>Cloud Firestore</span><span>Firebase</span><span>AWS</span>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="project-card">
+          <img src="Cap_img.png" alt=" Serverless Application with IaC(Infrastructure as code)  ">
+          <div class="card-body">
+            <h3> Serverless Application with IaC(Infrastructure as code) </h3>
+            <p> Fully automated serverless application built on AWS using Infrastructure as Code. It uses API Gateway to expose endpoints, AWS Lambda for business logic, and DynamoDB for data storage. Deployment is handled via CloudFormation and CodePipeline, with S3 for storing artifacts and CloudWatch for monitoring and logging. The setup ensures repeatable deployments and scalable, low-maintenance infrastructure.</p>
+            <div class="tags">
+              <span>AWS Lambda</span><span>Amazon API Gateway</span><span>Amazon DynamoDB</span><span>Amazon S3</span><span>AWS CloudFormation</span><span>AWS CodePipeline</span><span>AWS IAM</span><span>Amazon S3</span><span>AWS CloudFormation</span><span>AWS CodePipeline</span><span>Amazon CloudWatch</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="project-card">
+          <img src="CD.png" alt=" Serverless Application with IaC(Infrastructure as code)  ">
+          <div class="card-body">
+            <h3> Serverless Application with IaC(Infrastructure as code) </h3>
+            <p> Implemented a Jenkins-based CI/CD pipeline for a Node.js application, integrating with GitHub for automated builds and tests. Dockerized the app for consistent deployment and deployed containers to AWS EC2 instances. This reduced manual effort, improved deployment speed, and ensured high availability.</p>
+            <div class="tags">
+              <span>GitHub</span><span>Docker</span><span>Jenkins</span><span>Webhooks</span><span>AWS EC2</span>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  
+    <div id="certificates" class="tab-content">
+      <h2 class="section-heading">Certifications I've Earned</h2>
+      <p class="section-subheading">Here are some of the certifications I've completed across different platforms.</p>
+  
+      <div class="card-grid">
+        <div class="project-card">
+          <img src="hashicorp-certified-terraform-associate-003.png" alt="Hashicorp">
+          <div class="card-body">
+            <h3>HashiCorp Certified: Terraform Associate (003)</h3>
+            <p>terraform workflow · HCP · multicloud deployment · infrastructure state management · Configuration Management · Infrastructure as code (IaC)</p>
+            <div class="tags"><span>Hashicorp</span></div>
+            <a href="https://www.credly.com/earner/earned/badge/18fc4d48-0012-4ef2-a964-e33b9f0da9ab" class="btn-secondary">View Credential</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="DevOps_img.png" alt="EY Business Analytics Training">
+          <div class="card-body">
+            <h3>DevOps Foundations: Continuous Delivery/Continuous Integration</h3>
+            <p>DevOps pipelines, Continuous Integration and Continuous Delivery (CI/CD)</p>
+            <div class="tags"><span>National Association of State Boards of Accountancy (NASBA)</span></div>
+            <a href="https://www.linkedin.com/learning/certificates/65d585dbed0246fba9d4cc5c80b26bd470bfb01ced2c542f7718e83ff1ab37fe?trk=share_certificate" class="btn-secondary">View Credential</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="AWS_Practitioner_Essentials.png" alt="Cisco CCNA 200-301">
+          <div class="card-body">
+            <h3>AWS Cloud Practitioner Essentials</h3>
+            <p>OSI layers, Networking,Dynamic routing, Troubleshooting, Vlan, ACL, Wireless networking, Qos</p>
+            <div class="tags"><span>Amazon Web Services (AWS)</span></div>
+            <a href="https://explore.skillbuilder.aws/learn/courses/134/aws-cloud-practitioner-essentials/lessons/136404/aws-cloud-practitioner-essentials" class="btn-secondary">View Credential</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="Angular.png" alt="Experiential Network ">
+          <div class="card-body">
+            <h3>Angular Training</h3>
+            <p>Angular, NodeJS, Firebase, XML </p>
+            <div class="tags"><span>Internshala Training</span></div>
+            <a href="https://drive.google.com/file/d/1RSQ3IKCQbZC4TzaMvIqlal5J4Edp0Ev3/view?usp=sharing" class="btn-secondary">View Credential</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="MEAN_stack.png" alt="Experiential Network ">
+          <div class="card-body">
+            <h3>Angular & NodeJS- The MEAN Stack Guide</h3>
+            <p>Angular, NodeJS, MongoDB, Express JS, XML</p>
+            <div class="tags"><span>Udemy</span></div>
+            <a href="https://drive.google.com/file/d/1iuMA4N5PHiZK9CDyDpWIHdGwknWFiWmj/view?usp=sharing" class="btn-secondary">View Credential</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="Cyber_Security.png" alt="Experiential Network ">
+          <div class="card-body">
+            <h3>Cyber Security And Ethical Hacking</h3>
+            <p>Wireshark, Firewall, Encryption Protocol, Kali Linux, Authentication Method, Networking Basics</p>
+            <div class="tags"><span>Inferno Infosec</span></div>
+            <a href="https://drive.google.com/file/d/1hdNOefBDF1S3jMTdSXQ7pe6frgjwpMa0/view?usp=sharing" class="btn-secondary">View Credential</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+  function showContent(contentId) {
+    // Hide all tab contents
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(content => {
+      content.classList.remove('active');
+    });
+  
+    // Deactivate all tab buttons
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    tabButtons.forEach(button => {
+      button.classList.remove('active');
+    });
+  
+    // Show the selected tab content
+    document.getElementById(contentId).classList.add('active');
+    
+    // Activate the clicked tab button
+    event.currentTarget.classList.add('active');
+  }
+  </script>
+<!-- Contact Section -->
+<div class="contact-container">
+    <h1>Contact</h1>
+    <div class="contact-cards">
+        <!-- GitHub Card -->
+        <a href="https://github.com/Priyal-Patel0810" target="_blank" class="contact-card">
+            <div class="card-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+            </div>
+            <div class="card-text">GitHub</div>
+        </a>
+
+        <!-- LinkedIn Card -->
+        <a href="https://www.linkedin.com/in/priyalpatel8/" target="_blank" class="contact-card">
+            <div class="card-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+            </div>
+            <div class="card-text">LinkedIn</div>
+        </a>
+
+        <!-- Email Card -->
+        <a href="mailto:patelpriyal970@gmail.com" class="contact-card">
+            <div class="card-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+            </div>
+            <div class="card-text">Email</div>
+        </a>
+    </div>
+</div>
+
+<style>
+    .contact-container {
+        font-family: 'Arial', sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contact-container h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #333;
+    }
+
+    .contact-cards {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .contact-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 120px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        color: #333;
+        transition: all 0.3s ease;
+        padding: 1rem;
+    }
+
+    .contact-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-logo {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 1rem;
+        color: #555;
+    }
+
+    .card-text {
+        font-weight: 600;
+    }
+
+    /* GitHub specific hover effect */
+    .contact-card:nth-child(1):hover {
+        background: #f5f5f5;
+    }
+    .contact-card:nth-child(1):hover .card-logo {
+        color: #333;
+    }
+
+    /* LinkedIn specific hover effect */
+    .contact-card:nth-child(2):hover {
+        background: #f0f7ff;
+    }
+    .contact-card:nth-child(2):hover .card-logo {
+        color: #0a66c2;
+    }
+
+    /* Email specific hover effect */
+    .contact-card:nth-child(3):hover {
+        background: #fff0f0;
+    }
+    .contact-card:nth-child(3):hover .card-logo {
+        color: #d44638;
+    }
+</style>
+
+<section id="contact">
+<div class="contact-form-container">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+</div>
+</section>
+
+<style>
+    .contact-form-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .contact-form-container h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        color: #333;
+        text-align: center;
+    }
+    
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .form-group label {
+        font-weight: 500;
+        color: #555;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 1rem;
+        transition: border 0.3s ease;
+    }
+    
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #0066cc;
+        box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
+    }
+    
+    .submit-btn {
+        background-color: #0066cc;
+        color: white;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 0.5rem;
+    }
+    
+    .submit-btn:hover {
+        background-color: #0052a3;
+    }
+</style>
+
+<script>
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        
+        // Here you would typically send the data to a server
+        console.log('Form submitted:', { name, email, subject, message });
+        
+        // Show success message
+        alert('Message sent successfully!');
+        this.reset();
+    });
+</script>
+
+<footer>
+  <p>&copy; 2025 Priyal Patel. All rights reserved.</p>
+</footer>
+
+<script>
+  const words = ["DevOps Engineer", "Solutions Architect", "Programmer", "Cloud Solution Architect"];
+  let i = 0, j = 0;
+  let currentWord = '';
+  let isDeleting = false;
+  const speed = 100;
+
+  function type() {
+    const typewriter = document.getElementById('typewriter');
+    currentWord = words[i];
+    typewriter.innerHTML = isDeleting ? currentWord.substring(0, j--) : currentWord.substring(0, j++);
+    if (!isDeleting && j === currentWord.length + 1) {
+      isDeleting = true;
+      setTimeout(type, 800);
+    } else if (isDeleting && j === 0) {
+      isDeleting = false;
+      i = (i + 1) % words.length;
+      setTimeout(type, 400);
+    } else {
+      setTimeout(type, speed);
+    }
+  }
+  document.addEventListener('DOMContentLoaded', () => type());
+</script>
+
+<script>
+  const skills = document.querySelectorAll('.skill-box');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = 1;
+        entry.target.style.animationPlayState = 'running';
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  skills.forEach(skill => {
+    skill.style.opacity = 0;
+    skill.style.animationPlayState = 'paused';
+    observer.observe(skill);
+  });
+</script>
+
+<script>
+  function showToggle(type) {
+    const buttons = document.querySelectorAll(".tab-btn");
+    const tabs = document.querySelectorAll(".tab-content");
+
+    buttons.forEach(btn => {
+      btn.classList.remove("active");
+    });
+
+    tabs.forEach(tab => {
+      tab.classList.remove("active");
+    });
+
+    document.getElementById(type).classList.add("active");
+    document.querySelector(`.tab-btn[onclick="showToggle('${type}')"]`).classList.add("active");
+
+  }
+</script>
+
+<script>
+  function toggleDetails(header) {
+    const card = header.closest('.exp-card');
+    card.classList.toggle('open');
+  }
+</script>
+</body>
+</html>
