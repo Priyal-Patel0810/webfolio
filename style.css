@@ -131,8 +131,6 @@
     box-shadow: 0 8px 20px rgba(0, 255, 255, 0.3);
   }
   
-  
-  
   .about-text {
     max-width: 500px;
     text-align: left;
@@ -470,12 +468,23 @@
     margin-right: auto;
   }
   
-  .card-grid {
+  /*.card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     justify-items: center;
-  }
+  } */
+
+  .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: stretch; /* make cards stretch fully */
+  width: 90%;
+  max-width: 1400px; /* or 100% if you want full-screen */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
   
   .project-card {
     background: #121212;
